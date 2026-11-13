@@ -1405,7 +1405,6 @@
           '<div class="pay__left">' +
             '<a class="backlink" href="#product-' + p.slug + '">' + ICON.back + 'Back to watch details</a>' +
             '<h1 class="view-title" id="view-title" tabindex="-1">Complete your payment</h1>' +
-            '<p class="pay__lead">Transfer the exact amount to the account on this page, then send us the receipt on WhatsApp so we can confirm and arrange delivery.</p>' +
             '<div class="summary glass">' +
               '<div class="summary__img">' + (p.images && p.images[0] ? '<img src="' + esc(p.images[0]) + '" alt="">' : ICON.watch) + '</div>' +
               '<div><p class="summary__name">' + esc(p.name) + '</p><p class="summary__sub">1 watch</p></div>' +
@@ -1423,7 +1422,7 @@
             payRow("Bank", "pv-bank", CONFIG.bank.name, CONFIG.bank.name) +
             payRow("Account number", "pv-number", CONFIG.bank.number, CONFIG.bank.number) +
             payRow("Account name", "pv-account", CONFIG.bank.account, CONFIG.bank.account) +
-            '<a class="btn-whatsapp" href="' + waLink(msg) + '" target="_blank" rel="noopener">' + ICON.chat + 'Send receipt on WhatsApp</a>' +
+            '<a class="btn-whatsapp" href="' + waLink(msg) + '" target="_blank" rel="noopener">' + 'Send receipt </a>' +
             '<p class="paycard__note">Only send the receipt after you have made the transfer.</p>' +
           '</div>' +
         '</div></div></section>';
